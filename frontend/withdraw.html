@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Withdraw - Royal Empire</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="sidebar" class="sidebar"></div>
+<div class="main">
+  <h1>Withdraw Funds</h1>
+  <label><input type="radio" name="withdrawMethod" value="jazzcash" checked> JazzCash</label>
+  <label><input type="radio" name="withdrawMethod" value="easypaisa"> EasyPaisa</label>
+  <label><input type="radio" name="withdrawMethod" value="bank"> Bank Transfer</label>
+
+  <h3>Enter Amount</h3>
+  <input type="number" id="withdrawAmount" placeholder="Amount">
+  <button id="confirmWithdraw">Confirm Withdraw</button>
+</div>
+<script src="js/withdraw.js"></script>
+</body>
+</html>

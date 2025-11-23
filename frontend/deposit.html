@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deposit - Royal Empire</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="sidebar" class="sidebar"></div>
+  <div class="main">
+    <h1>Deposit Funds</h1>
+    <div class="deposit-section">
+      <h3>Deposit Method</h3>
+      <label><input type="radio" name="method" value="jazzcash" checked> JazzCash</label>
+      <label><input type="radio" name="method" value="easypaisa"> EasyPaisa</label>
+      <label><input type="radio" name="method" value="bank"> Bank Transfer</label>
+
+      <h3>Fixed Account Details</h3>
+      <p>JazzCash: <b>0300XXXXXXX</b></p>
+      <p>EasyPaisa: <b>0311XXXXXXX</b></p>
+      <p>Bank: <b>Account No: 123456789, IBAN: PKXXXXXXXX</b></p>
+
+      <h3>Enter Deposit Amount</h3>
+      <input type="number" id="depositAmount" placeholder="USD/USDT" />
+      <p>Converted to PKR: <span id="convertedPKR">0</span></p>
+
+      <h3>Upload Proof</h3>
+      <input type="file" id="paymentProof" accept="image/*">
+
+      <button id="confirmDeposit">Confirm Transaction</button>
+    </div>
+  </div>
+  <script src="js/deposit.js"></script>
+</body>
+</html>

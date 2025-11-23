@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Empire Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="sidebar" class="sidebar">
+    <h2>Royal Empire</h2>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="balance.html">Balance</a></li>
+      <li><a href="deposit.html">Deposit</a></li>
+      <li><a href="withdraw.html">Withdraw</a></li>
+      <li><a href="transactions.html">Transactions</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="referral.html">Referral</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="support.html">Support Chat</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h1>Dashboard</h1>
+    <div class="stats">
+      <p>Total Balance: $<span id="totalBalance">0</span></p>
+      <p>Total Investment: $<span id="totalInvestment">0</span></p>
+      <p>Total Earnings: $<span id="totalEarnings">0</span></p>
+      <p>Today's Earnings: $<span id="todayEarnings">0</span></p>
+    </div>
+
+    <h2>Buy Packages</h2>
+    <div id="packages" class="packages"></div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

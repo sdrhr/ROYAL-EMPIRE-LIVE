@@ -1,0 +1,345 @@
+/* =========================
+   General Reset & Fonts
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #121212; /* Dark Premium Black */
+  color: #fff;
+}
+
+/* =========================
+   Sidebar / Navigation
+========================= */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #000000 0%, #333333 100%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  color: gold;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: gold;
+  color: #000;
+}
+
+/* =========================
+   Main Content
+========================= */
+.main {
+  flex: 1;
+  padding: 30px;
+  background-color: #1e1e1e;
+  overflow-y: auto;
+}
+
+.main h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: gold;
+}
+
+.main h2, .main h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* =========================
+   Stats / Dashboard
+========================= */
+.stats p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   Packages
+========================= */
+.packages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.package {
+  background-color: #222;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid gold;
+}
+
+.package p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.package button {
+  background-color: gold;
+  color: #000;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.package button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* =========================
+   Forms (Deposit / Withdraw / Profile)
+========================= */
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: gold;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* =========================
+   Chat Support
+========================= */
+.chat-window {
+  background-color: #222;
+  padding: 15px;
+  height: 400px;
+  overflow-y: auto;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 1px solid gold;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+}
+
+.chat-message b {
+  color: gold;
+}
+
+/* =========================
+   Referral Page
+========================= */
+#refLink {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   Images
+========================= */
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  .sidebar ul {
+    display: flex;
+  }
+  .sidebar ul li {
+    margin: 0 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* 
+AGAINNNN STYLEEEEEEEEEE  */
+
+
+
+
+/* =========================
+   Dashboard / Stats Cards
+========================= */
+.stats-card {
+  background-color: #222;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid gold;
+  margin-bottom: 15px;
+}
+
+.stats-card h3 {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.stats-card p {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* =========================
+   Packages (Buy Buttons)
+========================= */
+.package {
+  background-color: #222;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid gold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.package p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.package button {
+  background-color: gold;
+  color: #000;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.package button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* =========================
+   QR Code (Balance page)
+========================= */
+.qr-code img {
+  max-width: 200px;
+  margin: 15px 0;
+  border-radius: 12px;
+}
+
+/* =========================
+   Referral Page
+========================= */
+.referral-levels {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.referral-levels li {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* =========================
+   Support Chat Messages
+========================= */
+.chat-message {
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+}
+
+.chat-message b {
+  color: gold;
+}
+
+/* =========================
+   Dashboard / Packages / Buttons consistent
+========================= */
+button, input[type="submit"] {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: gold;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+
+
+
