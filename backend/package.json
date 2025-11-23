@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Royal Empire earning website backend",
   "main": "server.js",
-  "type": "module",
   "scripts": {
     "start": "node server.js"
   },
@@ -20,4 +19,5 @@
     "socket.io": "^4.8.1"
   }
 }
+
 
