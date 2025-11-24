@@ -1,4 +1,4 @@
-const supportURL = "https://royal-empire-12.onrender.com";
+const supportURL = "https://vo3g4390.up.railway.app/api";
 const chatWindow = document.getElementById('chatWindow');
 const token = localStorage.getItem('token');
 
@@ -26,3 +26,4 @@ function appendMessage(sender, message) {
   chatWindow.appendChild(div);
   chatWindow.scrollTop = chatWindow.scrollHeight;
 }
+
