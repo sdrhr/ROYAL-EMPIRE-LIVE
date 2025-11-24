@@ -8,7 +8,17 @@ const jwt = require('jsonwebtoken');
 const multer = require('multer');
 const path = require('path');
 const http = require('http');
-const { Server } = require('socket.io');
+const io = new Server(server, {
+    cors: {
+        origin: [
+            "https://royalempireliveapp.netlify.app",
+            "http://localhost:3000"
+        ],
+        methods: ["GET", "POST"],
+        credentials: true
+    }
+});
+
 require('dotenv').config();
 
 const authRoutes = require('./routes/auth');
@@ -23,8 +33,11 @@ const supportRoutes = require('./routes/support');
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: '*' } });
+app.use(cors({
+    origin: ["https://royalempireliveapp.netlify.app", "http://localhost:3000"],
+    credentials: true
+}));
 
-app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
@@ -56,3 +69,4 @@ io.on('connection', socket => {
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
