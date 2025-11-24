@@ -1,4 +1,4 @@
-const profileURL = "https://royal-empire-12.onrender.com";
+const profileURL = "https://vo3g4390.up.railway.app/api";
 const token = localStorage.getItem('token');
 
 async function fetchProfile() {
@@ -11,3 +11,4 @@ async function fetchProfile() {
   document.getElementById('balance').textContent = data.balance.toFixed(2);
 }
 fetchProfile();
+
