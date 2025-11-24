@@ -1,4 +1,4 @@
-const referralURL = "https://royal-empire-12.onrender.com";
+const referralURL = "https://vo3g4390.up.railway.app/api";
 const token = localStorage.getItem('token');
 document.getElementById('refLink').value = `${referralURL}/register?ref=${localStorage.getItem('userId')}`;
 
@@ -12,3 +12,4 @@ async function fetchReferral() {
   document.getElementById('level3').textContent = data.level3 || 0;
 }
 fetchReferral();
+
