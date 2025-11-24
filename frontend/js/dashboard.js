@@ -1,6 +1,7 @@
 // Dashboard JS place
 
-const backendURL = "https://royal-empire-12.onrender.com";
+const backendURL =  "https://vo3g4390.up.railway.app/api";
+;
 const token = localStorage.getItem('token'); // JWT after login
 const socket = io(backendURL);
 
@@ -86,3 +87,4 @@ socket.on('balanceUpdate', data => {
 // Initialize
 renderPackages();
 fetchDashboard();
+
