@@ -220,6 +220,58 @@ img {
 
 
 
+/* transaction +about us page styling  */
+
+
+.container {
+    max-width: 420px;
+    margin: auto;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+button {
+    width: 100%;
+    background: #6633ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.history-item {
+    background: #f6f6f6;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #6633ff;
+}
 
 
 
@@ -337,6 +389,7 @@ button:hover {
   background-color: #fff;
   color: #000;
 }
+
 
 
 
