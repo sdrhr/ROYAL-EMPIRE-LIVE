@@ -1,4 +1,4 @@
-const supportURL = "https://vo3g4390.up.railway.app/api";
+const supportURL = "https://vo3g4390.up.railway.app/";
 const chatWindow = document.getElementById('chatWindow');
 const token = localStorage.getItem('token');
 
@@ -26,4 +26,5 @@ function appendMessage(sender, message) {
   chatWindow.appendChild(div);
   chatWindow.scrollTop = chatWindow.scrollHeight;
 }
+
 
