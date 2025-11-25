@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions - Royal Empire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2 class="page-title">Transaction Page</h2>
+
+    <!-- Current Balance -->
+    <div class="card">
+        <h3>Your Balance</h3>
+        <p id="balance">Loading...</p>
+    </div>
+
+    <!-- Perform Transaction -->
+    <div class="card">
+        <h3>Make a Transaction</h3>
+
+        <label>Transaction Type</label>
+        <select id="type">
+            <option value="deposit"><a href="deposit.html">Deposit></a></option>
+            <option value="withdraw"><a href="withdraw.html">withdraw</a></option>
+            <option value="buy-package"> <a href="index.html">Buy Package</a></option>
+        </select>
+
+        <label>Amount</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <button onclick="makeTransaction()">Submit</button>
+    </div>
+
+    <!-- History -->
+    <div class="card">
+        <h3>Transaction History</h3>
+        <div id="history"></div>
+    </div>
+</div>
+
+<script src="js/transactions.js"></script>
+
+</body>
+</html>
