@@ -29,7 +29,7 @@ app.use(
       "https://royalempireliveapp.netlify.app",
       "http://localhost:3000",
     ],
-    methods: ["GET", "POST"],
+    methods: ["GET", "POST","PUT","DELETE"],
     credentials: true,
   })
 );
@@ -76,6 +76,8 @@ const packageRoutes = require("./routes/package");
 const referralRoutes = require("./routes/referral");
 const profileRoutes = require("./routes/profile");
 const supportRoutes = require("./routes/support");
+// ⭐ NEW: Transaction history route
+const transactionsRoutes =  require("./routes/transactions");
 
 // ----------------------
 // API Routes
@@ -88,6 +90,9 @@ app.use("/api/user/packages", packageRoutes);
 app.use("/api/user/referrals", referralRoutes);
 app.use("/api/user/profile", profileRoutes);
 app.use("/api/support", supportRoutes);
+app.use("/api/user/transactions'", transactionsRoutes);
+
+
 
 // ----------------------
 // Socket.io Events
@@ -112,3 +117,4 @@ const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
+
