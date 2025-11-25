@@ -1,4 +1,4 @@
-const withdrawURL = "https://vo3g4390.up.railway.app/api";
+const withdrawURL = "https://vo3g4390.up.railway.app/";
 
 document.getElementById('confirmWithdraw').addEventListener('click', async () => {
   const method = document.querySelector('input[name="withdrawMethod"]:checked').value;
@@ -15,4 +15,5 @@ document.getElementById('confirmWithdraw').addEventListener('click', async () =>
   if(data.success) alert('Withdraw request submitted successfully');
   else alert(data.message);
 });
+
 
