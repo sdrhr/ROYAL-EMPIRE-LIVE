@@ -1,4 +1,4 @@
-const depositURL = "https://vo3g4390.up.railway.app/";
+const depositURL = "https://vo3g4390.up.railway.app";
 const rateUSDToPKR = 280;
 
 document.getElementById('depositAmount').addEventListener('input', e => {
@@ -27,5 +27,6 @@ document.getElementById('confirmDeposit').addEventListener('click', async () => 
   if(data.success) alert('Deposit request submitted successfully');
   else alert(data.message);
 });
+
 
 
